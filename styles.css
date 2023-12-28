@@ -28,6 +28,19 @@ header h1 {
     color: #fcfcfc;
 }
 
+nav a.icon-linkedin img,
+nav a.icon-github img {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+nav a.icon-linkedin:hover img,
+nav a.icon-github:hover img {
+    transform: scale(1.2);
+}
+
 nav {
     text-align: center;
     padding: 15px;
@@ -35,9 +48,9 @@ nav {
 }
 
 nav a {
-    color: #f7f7f7;
     text-decoration: none;
     margin: 0 10px;
+    transition: color 0.3s ease;
 }
 
 nav a img {
@@ -46,9 +59,13 @@ nav a img {
     object-fit: contain; 
 }
 
-nav a:hover {
-    transform: scale(2.2); 
-    color: #ffde06;
+nav a.secciones {
+    color: #f7f7f7;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px 15px;
+    border: 1px solid #ffe603a7;
+    border-radius: 8px;
 }
 
 main {
@@ -130,6 +147,8 @@ main {
 
 .button:hover {
     background-color: #7d0ae1;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
 #contacto .section-content {
@@ -141,10 +160,6 @@ main {
 #contacto a {
     color: #fff;
     text-decoration: underline;
-}
-
-#contacto a:hover {
-    color: #ccc;
 }
 
 footer {
@@ -173,6 +188,8 @@ footer {
 
 .filter-buttons button:hover {
     background-color: #7009ffa7;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
 .experience-entry, .education-entry {
